@@ -1,0 +1,31 @@
+---
+jupyter:
+  jupytext:
+    text_representation:
+      extension: .Rmd
+      format_name: rmarkdown
+      format_version: '1.2'
+      jupytext_version: 1.4.2
+  kernelspec:
+    display_name: Python 3
+    language: python
+    name: python3
+---
+
+```{python}
+# %autosave 1
+import aix360.data
+import aix360.datasets as ds
+from tests.lime import test_lime
+import interpret
+```
+
+```{python}
+test = ds.CelebADataset(dirpath=None)
+testExplainer = test_lime.TestLIMEExplainer()
+
+```
+
+```{python}
+
+```
